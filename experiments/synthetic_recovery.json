@@ -1,0 +1,142 @@
+{
+  "true_params": {
+    "N": 500,
+    "K": 4,
+    "T": 4.0,
+    "delta": 0.023104906018664842,
+    "alpha1": 0.3,
+    "beta1": 3.0,
+    "alpha2": 0.8,
+    "beta2": 2.0,
+    "mark": {
+      "intercept": 0.5,
+      "b_target": 1.0,
+      "b_sender": 0.2
+    }
+  },
+  "long_design": {
+    "N": 200,
+    "T": 90.0,
+    "eta": 0.1
+  },
+  "n_events": 2071,
+  "n_nodes": 500,
+  "n_unique_pairs": 2071,
+  "activity": {
+    "scale_s": 0.8487,
+    "corr_log": 0.7852573438616882,
+    "rel_rmse": 0.9699406038241537
+  },
+  "psi_probe": {
+    "n_events": 2071,
+    "coef_cap": 1.165467911131737,
+    "se_cap": 0.21950532725691843,
+    "p_cap": 1.0991436120155844e-07,
+    "coef_logW": 0.9278898133942247,
+    "se_logW": 0.05693373772187406,
+    "true_beta2": 2.0,
+    "sign_matches": true
+  },
+  "kernel": {
+    "log_corr_shape": 0.9712296239223661,
+    "rel_rmse": 0.0995969824945187,
+    "W_hat": [
+      [
+        1.6540642722117203,
+        1.2648221343873518,
+        1.1686825760052304,
+        1.232394366197183
+      ],
+      [
+        1.2351778656126482,
+        1.6735537190082646,
+        0.6664388243335612,
+        0.6161971830985915
+      ],
+      [
+        1.0951291271657404,
+        0.44429254955570746,
+        1.328509243032393,
+        0.5625860425712168
+      ],
+      [
+        1.0869565217391304,
+        0.5441741357234315,
+        0.4633061527057079,
+        1.7543642134497124
+      ]
+    ],
+    "true_W": [
+      [
+        1.2,
+        0.9,
+        0.9,
+        0.9
+      ],
+      [
+        0.9,
+        1.2,
+        0.4,
+        0.4
+      ],
+      [
+        0.9,
+        0.4,
+        1.2,
+        0.4
+      ],
+      [
+        0.9,
+        0.4,
+        0.4,
+        1.2
+      ]
+    ]
+  },
+  "mark": {
+    "b_sender": 0.8010686871058409,
+    "b_target": 0.9731298892274693,
+    "intercept": 0.4750299252195471,
+    "true": {
+      "intercept": 0.5,
+      "b_target": 1.0,
+      "b_sender": 0.2
+    },
+    "magnitude_uniform_rmse": 0.004007725736359245
+  },
+  "delta": {
+    "grid": {
+      "15": {
+        "rel_l1_trajectory": 0.009796814561121754
+      },
+      "30": {
+        "rel_l1_trajectory": 0.003156938595476797
+      },
+      "60": {
+        "rel_l1_trajectory": 0.0020897463604478365
+      },
+      "120": {
+        "rel_l1_trajectory": 0.002573920639279716
+      }
+    },
+    "argmax_hl_days": 60,
+    "true_hl_days": 30.0,
+    "delta_true": 0.023104906018664842,
+    "note": "delta is recovered from the aggregate rate trajectory (event-level likelihoods are nearly flat; linear response models are scale-invariant in the features)"
+  },
+  "sparsity": {
+    "250": {
+      "mean_events": 1144.6666666666667,
+      "events_per_capita": 4.578666666666667
+    },
+    "500": {
+      "mean_events": 2225.0,
+      "events_per_capita": 4.45
+    },
+    "1000": {
+      "mean_events": 4278.333333333333,
+      "events_per_capita": 4.278333333333333
+    }
+  },
+  "wall_seconds": 152.3
+}

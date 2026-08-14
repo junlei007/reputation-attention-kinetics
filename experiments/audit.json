@@ -1,0 +1,21 @@
+{
+  "n_rows": 35592,
+  "n_users": 5881,
+  "n_positive_ratings": 32029,
+  "n_negative_ratings": 3563,
+  "n_zero_ratings": 0,
+  "n_malformed": 0,
+  "n_self_loops": 0,
+  "n_unique_directed_pairs": 35592,
+  "no_repeated_directed_pair": true,
+  "t_min_unix": 1289241911.72836,
+  "t_max_unix": 1453684323.75728,
+  "span_days": 1903.3,
+  "min_interevent_gap_s": 0.039640188217163086,
+  "max_interevent_gap_s": 581334.068379879,
+  "n_timestamp_ties": 0,
+  "rating_min": -10,
+  "rating_max": 10,
+  "rating_median": 1.0,
+  "rating_std": 3.5620938555759123
+}

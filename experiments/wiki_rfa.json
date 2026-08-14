@@ -1,0 +1,117 @@
+{
+  "audit": {
+    "raw_records": 196614,
+    "complete": 188904,
+    "users": 11128,
+    "targets": 3468,
+    "distinct_pairs": 180860,
+    "repeated_pairs": 7337,
+    "events_after_first": 8044,
+    "support": 137963,
+    "neutral": 11648,
+    "oppose": 39293,
+    "t_min": 1060997100.0,
+    "t_max": 1370461800.0,
+    "unparseable_dates": 7710
+  },
+  "windows": {
+    "n_windows": 3950,
+    "n_candidates_with_windows": 3468,
+    "median_votes_per_window": 38.0,
+    "median_window_days": 6.392708333333333,
+    "outcome_1_share": 0.4751898734177215
+  },
+  "split": {
+    "cutoff": 1277622390.0,
+    "train": 163372,
+    "test": 25532
+  },
+  "sign_model": {
+    "coef_net_cap": 0.2805966503237208,
+    "test_logloss_vs_baseline": {
+      "model": 0.552,
+      "baseline": 0.6044
+    },
+    "three_class_accuracy": 0.7187,
+    "base_support_rate": 0.7075
+  },
+  "window_target_choice": {
+    "n_strata": 1555,
+    "converged": true,
+    "coef": {
+      "net_cap": 0.03167645141725713,
+      "count_cap": -0.004443316561331348,
+      "log_indegree": -0.1877492745347187,
+      "age_days": 0.0015225259529654993,
+      "log_recency": -2.5362530782187482,
+      "ever_sent": 0.3818503971395532
+    },
+    "se": {
+      "net_cap": 0.0116203199005505,
+      "count_cap": 0.000992911391458973,
+      "log_indegree": 0.0473390225270372,
+      "age_days": 0.0001682024370411005,
+      "log_recency": 0.37506917112844285,
+      "ever_sent": 0.07948140919790889
+    },
+    "pvalue": {
+      "net_cap": 0.006411603512078905,
+      "count_cap": 7.639759657213515e-06,
+      "log_indegree": 7.307131157837145e-05,
+      "age_days": 1.4069861807371263e-19,
+      "log_recency": 1.3601118948604887e-11,
+      "ever_sent": 1.553147082049616e-06
+    }
+  },
+  "trajectory": {
+    "real_rates": [
+      0.005005,
+      0.003247,
+      0.001854,
+      0.003393,
+      0.002788,
+      0.001729,
+      0.001151,
+      0.001467,
+      0.000873,
+      0.001269,
+      0.001634,
+      0.002319,
+      0.001361,
+      0.001888,
+      0.002782,
+      0.001411
+    ],
+    "pred_rates": [
+      1.113876,
+      1.114617,
+      1.115008,
+      1.116086,
+      1.117064,
+      1.11774,
+      1.118255,
+      1.118739,
+      1.118887,
+      1.118995,
+      1.119007,
+      1.11962,
+      1.119992,
+      1.120399,
+      1.121243,
+      1.121847
+    ],
+    "shape_scale_s": 0.0019,
+    "rel_mean_abs_diff_after_scale": 0.4492,
+    "shape_corr": -0.6192
+  },
+  "election": {
+    "n_windows": 3935,
+    "share_zero_pre_window_capital": 0.8778,
+    "auc_pre_window_capital": 0.5345,
+    "n_nonzero_pre_window": 481,
+    "auc_pre_window_capital_nonzero": 0.684,
+    "note": "pre-window capital excludes the current round's votes (clean predictor; recorded before the round's first vote); the previous AUC 0.796/0.878 were contaminated by the first vote of the round and are retracted",
+    "success_rate": 0.4770012706480305
+  },
+  "wall_seconds": 4.8
+}

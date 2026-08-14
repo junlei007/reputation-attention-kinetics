@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Reputation–Attention Kinetics"
+type: software
+version: 0.1.0
+date-released: 2026-08-14
+license: MIT
+repository-code: "https://github.com/junlei007/reputation-attention-kinetics"
+authors:
+  - family-names: Du
+    given-names: Junlei
+    orcid: "https://orcid.org/0000-0002-2881-5223"
+    affiliation: "Research Center of Distance Education, Beijing Normal University"
+  - family-names: Li
+    given-names: Shuang
+    orcid: "https://orcid.org/0000-0003-4544-1101"
+    affiliation: "Research Center of Distance Education, Beijing Normal University"
+abstract: >-
+  Simulation, estimation, and numerical validation code for a microscopic–
+  macroscopic theory of reputation capital and attention memory in directed
+  trust networks.
+keywords:
+  - temporal networks
+  - directed trust networks
+  - kinetic equations
+  - propagation of chaos
+  - reputation capital
+  - attention memory
+preferred-citation:
+  type: article
+  title: >-
+    From Directed Trust Events to Reputation-Capital Kinetics: Attention-Memory
+    State Augmentation, Propagation of Chaos, and Cross-Platform Stress Tests
+  authors:
+    - family-names: Du
+      given-names: Junlei
+      orcid: "https://orcid.org/0000-0002-2881-5223"
+    - family-names: Li
+      given-names: Shuang
+      orcid: "https://orcid.org/0000-0003-4544-1101"
+  year: 2026

@@ -1,0 +1,78 @@
+{
+  "wall_seconds": 396.5,
+  "split_event_quantile": {
+    "train": 24914,
+    "test": 10678,
+    "partial_loglik_kinetic": -3.6011218194720307,
+    "top10_kinetic": 0.09552350627458325,
+    "mrr_kinetic": 0.04046809737357174,
+    "macro_w1": 1.1752340704731155,
+    "wall_s": 79.1
+  },
+  "half_life_sensitivity": {
+    "30": {
+      "partial_loglik_kinetic": -3.5530580750299405,
+      "top10_kinetic": 0.19300269127258746,
+      "macro_w1": 0.11280664721744524,
+      "trajectory_iae": 9.602514773288611,
+      "sign_logloss": 0.4295273688236023
+    },
+    "90": {
+      "partial_loglik_kinetic": -3.48123138265134,
+      "top10_kinetic": 0.18069973087274124,
+      "macro_w1": 0.5658100180039751,
+      "trajectory_iae": 9.436580773252713,
+      "sign_logloss": 0.42840305147225144
+    },
+    "365": {
+      "partial_loglik_kinetic": -3.424047591007254,
+      "top10_kinetic": 0.11072664359861592,
+      "macro_w1": 1.9646525554446177,
+      "trajectory_iae": 9.30554242381868,
+      "sign_logloss": 0.43891895880403325
+    },
+    "None": {
+      "partial_loglik_kinetic": -3.4675317490863296,
+      "top10_kinetic": 0.07535563244905806,
+      "macro_w1": 2.973673118308133,
+      "trajectory_iae": 9.576740335068191,
+      "sign_logloss": 0.49446377125221863
+    }
+  },
+  "ablations": {
+    "no_feedback": {
+      "partial_loglik": -3.613319852322781,
+      "top10": 0.005382545174932718
+    },
+    "no_kernel": {
+      "partial_loglik": -3.261279976861028,
+      "top10": 0.14840445982314496
+    },
+    "full": {
+      "partial_loglik": null,
+      "top10": null
+    }
+  },
+  "remove_top_5pct": {
+    "n_test": 2014,
+    "partial_loglik_kinetic": -3.4588732448793773,
+    "top10_kinetic": 0.09880834160873883
+  },
+  "remove_top_10pct": {
+    "n_test": 1528,
+    "partial_loglik_kinetic": -3.5209632386056278,
+    "top10_kinetic": 0.05366492146596859
+  },
+  "bitcoin_alpha": {
+    "n_train": 22634,
+    "n_test": 1552,
+    "partial_loglik_kinetic": -3.3430896778297687,
+    "partial_loglik_homogeneous": -3.4339872044851467,
+    "top10_kinetic": 0.12693298969072164,
+    "mrr_kinetic": 0.054349581586484945,
+    "macro_w1": 1.1444355169816025,
+    "trajectory_iae": 14.693448693124171,
+    "sign_logloss": 0.39959119624372647,
+    "wall_s": 36.5
+  }
+}

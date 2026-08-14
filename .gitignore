@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# local assistant/editor configuration
+.claude/
+
+# scratch / derived
+tmp/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.pdf
+paper/appendix/*.aux
+paper/appendix/*.log
+paper/appendix/*.out
+paper/appendix/*.fls
+paper/appendix/*.fdb_latexmk
+paper/appendix/*.pdf
+
+# large public datasets (download from SNAP; see README)
+# data READMEs are committed, raw data files are not
+data/**/*.csv
+data/**/*.csv.gz
+data/**/*.gz
+data/**/*.zip
+
+# internal review and submission-working files (kept locally)
+notes/JCN_simulated_review_*.md
+notes/WP6_paper_and_routing.md
+paper/revision_snapshots/
+research_plan.md

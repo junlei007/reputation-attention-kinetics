@@ -1,0 +1,369 @@
+{
+  "pipeline": "09_wiki_rfa_robustness",
+  "note": "RfA fitted separately; no pooling with Bitcoin",
+  "seeds": [
+    {
+      "seed": 0,
+      "n_strata": 1555,
+      "converged": true,
+      "coef": {
+        "net_cap": 0.03167645141725713,
+        "count_cap": -0.004443316561331348,
+        "log_indegree": -0.1877492745347187,
+        "age_days": 0.0015225259529654993,
+        "log_recency": -2.5362530782187482,
+        "ever_sent": 0.3818503971395532
+      },
+      "se": {
+        "net_cap": 0.0116203199005505,
+        "count_cap": 0.000992911391458973,
+        "log_indegree": 0.0473390225270372,
+        "age_days": 0.0001682024370411005,
+        "log_recency": 0.37506917112844285,
+        "ever_sent": 0.07948140919790889
+      }
+    },
+    {
+      "seed": 1,
+      "n_strata": 1555,
+      "converged": true,
+      "coef": {
+        "net_cap": 0.03167645141725712,
+        "count_cap": -0.004443316561331353,
+        "log_indegree": -0.1877492745347184,
+        "age_days": 0.001522525952965499,
+        "log_recency": -2.5362530782187482,
+        "ever_sent": 0.38185039713955327
+      },
+      "se": {
+        "net_cap": 0.011620319805154104,
+        "count_cap": 0.0009929113871920581,
+        "log_indegree": 0.047339023997974856,
+        "age_days": 0.00016820243914138293,
+        "log_recency": 0.3750691729151474,
+        "ever_sent": 0.07948140959659936
+      }
+    },
+    {
+      "seed": 2,
+      "n_strata": 1555,
+      "converged": true,
+      "coef": {
+        "net_cap": 0.03167645141725709,
+        "count_cap": -0.004443316561331352,
+        "log_indegree": -0.1877492745347183,
+        "age_days": 0.0015225259529654984,
+        "log_recency": -2.5362530782187482,
+        "ever_sent": 0.38185039713955327
+      },
+      "se": {
+        "net_cap": 0.011620319781176567,
+        "count_cap": 0.0009929113913834781,
+        "log_indegree": 0.04733901903485179,
+        "age_days": 0.0001682024302302111,
+        "log_recency": 0.37506917283338365,
+        "ever_sent": 0.079481409792426
+      }
+    },
+    {
+      "seed": 3,
+      "n_strata": 1555,
+      "converged": true,
+      "coef": {
+        "net_cap": 0.03167645141725715,
+        "count_cap": -0.00444331656133135,
+        "log_indegree": -0.18774927453471857,
+        "age_days": 0.0015225259529654993,
+        "log_recency": -2.536253078218748,
+        "ever_sent": 0.3818503971395532
+      },
+      "se": {
+        "net_cap": 0.011620320102778242,
+        "count_cap": 0.0009929113897255842,
+        "log_indegree": 0.04733902428494514,
+        "age_days": 0.00016820244153947108,
+        "log_recency": 0.3750691743573258,
+        "ever_sent": 0.0794814095016449
+      }
+    }
+  ],
+  "recency_caps": [
+    {
+      "cap_days": 30.0,
+      "n_strata": 1555,
+      "coef": {
+        "net_cap": 0.031663376892920876,
+        "count_cap": -0.004434067348343712,
+        "log_indegree": -0.1810216747095582,
+        "age_days": 0.0015040679047740656,
+        "log_recency": -2.9032425013465355,
+        "ever_sent": 0.374755930386722
+      },
+      "se": {
+        "net_cap": 0.011642331964988562,
+        "count_cap": 0.0009935005050061149,
+        "log_indegree": 0.04732857319924286,
+        "age_days": 0.00016837221696866536,
+        "log_recency": 0.3973258403850753,
+        "ever_sent": 0.0795591386139661
+      }
+    },
+    {
+      "cap_days": 90.0,
+      "n_strata": 1555,
+      "coef": {
+        "net_cap": 0.03166170666802113,
+        "count_cap": -0.00443907230402426,
+        "log_indegree": -0.184030591386714,
+        "age_days": 0.0015122976792176423,
+        "log_recency": -2.735157782872424,
+        "ever_sent": 0.377993498344445
+      },
+      "se": {
+        "net_cap": 0.011632191777383534,
+        "count_cap": 0.000993223568423037,
+        "log_indegree": 0.04733439066160531,
+        "age_days": 0.00016829561103513829,
+        "log_recency": 0.3887931747797285,
+        "ever_sent": 0.0795284207169036
+      }
+    },
+    {
+      "cap_days": 180.0,
+      "n_strata": 1555,
+      "coef": {
+        "net_cap": 0.03166694130373912,
+        "count_cap": -0.0044414819513093114,
+        "log_indegree": -0.18591951191886094,
+        "age_days": 0.0015174853540641554,
+        "log_recency": -2.6329431968454347,
+        "ever_sent": 0.3799723184579109
+      },
+      "se": {
+        "net_cap": 0.011626066324612576,
+        "count_cap": 0.0009930598371730554,
+        "log_indegree": 0.04733704827740437,
+        "age_days": 0.00016824798485630128,
+        "log_recency": 0.382180504210523,
+        "ever_sent": 0.0795055828113686
+      }
+    }
+  ],
+  "stratify_prior_capital": {
+    "first_candidacy": {
+      "tag": "first (zero prior cap)",
+      "n_strata": 35,
+      "note": "fit failed: ValueError"
+    },
+    "repeat_candidacy": {
+      "tag": "repeat (nonzero prior cap)",
+      "n_strata": 1520,
+      "converged": true,
+      "coef": {
+        "net_cap": 0.028494185539241414,
+        "count_cap": -0.004100076978656007,
+        "log_indegree": -0.1191634853332146,
+        "age_days": 0.001334785852016991,
+        "log_recency": -3.6548417820427255,
+        "ever_sent": 0.3604756637595866
+      },
+      "se": {
+        "net_cap": 0.011832810736657377,
+        "count_cap": 0.0010029786916263142,
+        "log_indegree": 0.051072702329112325,
+        "age_days": 0.00017526573100568813,
+        "log_recency": 0.4312046691159049,
+        "ever_sent": 0.08109920943432687
+      },
+      "pvalue": {
+        "net_cap": 0.016037295145137184,
+        "count_cap": 4.3529498426921165e-05,
+        "log_indegree": 0.01963697677271598,
+        "age_days": 2.620968071325328e-14,
+        "log_recency": 2.3329636363436727e-17,
+        "ever_sent": 8.79439168940918e-06
+      }
+    },
+    "n_first_strata": 35,
+    "n_repeat_strata": 1520
+  },
+  "drop_single_vote_windows": {
+    "n_strata": 1555,
+    "coef": {
+      "net_cap": 0.03167645141725713,
+      "count_cap": -0.004443316561331348,
+      "log_indegree": -0.1877492745347187,
+      "age_days": 0.0015225259529654993,
+      "log_recency": -2.5362530782187482,
+      "ever_sent": 0.3818503971395532
+    },
+    "se": {
+      "net_cap": 0.0116203199005505,
+      "count_cap": 0.000992911391458973,
+      "log_indegree": 0.0473390225270372,
+      "age_days": 0.0001682024370411005,
+      "log_recency": 0.37506917112844285,
+      "ever_sent": 0.07948140919790889
+    }
+  },
+  "gap_90_days": {
+    "n_windows": 3863,
+    "median_window_days": 6.463888888888889,
+    "target_choice": {
+      "n_strata": 1677,
+      "coef": {
+        "net_cap": 0.022387361086345536,
+        "count_cap": -0.0043433457863402344,
+        "log_indegree": -0.19432624280598323,
+        "age_days": 0.0014601968704878667,
+        "log_recency": -2.0715026945667505,
+        "ever_sent": 0.40339564906903563
+      },
+      "se": {
+        "net_cap": 0.011439998888144702,
+        "count_cap": 0.000981224514764792,
+        "log_indegree": 0.045641259474369,
+        "age_days": 0.00016370242285353902,
+        "log_recency": 0.2901059639731169,
+        "ever_sent": 0.07631052038139113
+      }
+    },
+    "election": {
+      "n_windows": 3849,
+      "auc_pre_window_capital": 0.5304,
+      "auc_pre_window_capital_nonzero": 0.6898
+    }
+  },
+  "half_life": [
+    {
+      "hl_days": 90.0,
+      "target_choice": {
+        "n_strata": 1555,
+        "coef": {
+          "net_cap": 0.033098034802060285,
+          "count_cap": -0.00442654685515895,
+          "log_indegree": -0.19045854487183683,
+          "age_days": 0.0015325301904440573,
+          "log_recency": -2.5365339570467413,
+          "ever_sent": 0.37944793623743583
+        }
+      },
+      "election_auc": 0.5344,
+      "sign_logloss": {
+        "model": 0.552,
+        "baseline": 0.6044
+      }
+    },
+    {
+      "hl_days": 180.0,
+      "target_choice": {
+        "n_strata": 1555,
+        "coef": {
+          "net_cap": 0.03167645141725713,
+          "count_cap": -0.004443316561331348,
+          "log_indegree": -0.1877492745347187,
+          "age_days": 0.0015225259529654993,
+          "log_recency": -2.5362530782187482,
+          "ever_sent": 0.3818503971395532
+        }
+      },
+      "election_auc": 0.5345,
+      "sign_logloss": {
+        "model": 0.552,
+        "baseline": 0.6044
+      }
+    },
+    {
+      "hl_days": 365.0,
+      "target_choice": {
+        "n_strata": 1555,
+        "coef": {
+          "net_cap": 0.030970815264363825,
+          "count_cap": -0.0044507668973582685,
+          "log_indegree": -0.18638297951717736,
+          "age_days": 0.0015174549422802993,
+          "log_recency": -2.5359998821423733,
+          "ever_sent": 0.38305277423878414
+        }
+      },
+      "election_auc": 0.5345,
+      "sign_logloss": {
+        "model": 0.552,
+        "baseline": 0.6044
+      }
+    }
+  ],
+  "three_settings": {
+    "otc_g1": {
+      "n_events": 12000,
+      "coef": {
+        "log_indegree": 0.07842735974485483,
+        "net_cap": -0.06395032481891035,
+        "count_cap": 0.03321783278306171,
+        "age_days": -0.0005301070590739323,
+        "log_recency": -1.2100095820825392,
+        "ever_sent": -0.9034173293645253
+      },
+      "se": {
+        "log_indegree": 0.02174144849826431,
+        "net_cap": 0.009562451843466253,
+        "count_cap": 0.0028828613424164823,
+        "age_days": 0.0001498675783309557,
+        "log_recency": 0.010145447053760337,
+        "ever_sent": 0.03446373604289686
+      }
+    },
+    "alpha_g1": {
+      "n_events": 12000,
+      "coef": {
+        "log_indegree": -0.09458277726119303,
+        "net_cap": -0.052958456894810664,
+        "count_cap": 0.03433893867639201,
+        "age_days": -0.0004867661420465176,
+        "log_recency": -1.1983277590936539,
+        "ever_sent": -0.03796823733616624
+      },
+      "se": {
+        "log_indegree": 0.02037967038073245,
+        "net_cap": 0.009480102077659525,
+        "count_cap": 0.002853646868180147,
+        "age_days": 0.00014332032532115836,
+        "log_recency": 0.009692925577114507,
+        "ever_sent": 0.04227154613479153
+      },
+      "pvalue": {
+        "log_indegree": 3.466672640007057e-06,
+        "net_cap": 2.3199182411220464e-08,
+        "count_cap": 2.373243782655334e-33,
+        "age_days": 0.000682907056940889,
+        "log_recency": 0.0,
+        "ever_sent": 0.3690797581019287
+      }
+    },
+    "rfa_aligned": {
+      "n_strata": 1555,
+      "coef": {
+        "net_cap": 0.03167645141725713,
+        "count_cap": -0.004443316561331348,
+        "log_indegree": -0.1877492745347187,
+        "age_days": 0.0015225259529654993,
+        "log_recency": -2.5362530782187482,
+        "ever_sent": 0.3818503971395532
+      },
+      "se": {
+        "net_cap": 0.0116203199005505,
+        "count_cap": 0.000992911391458973,
+        "log_indegree": 0.0473390225270372,
+        "age_days": 0.0001682024370411005,
+        "log_recency": 0.37506917112844285,
+        "ever_sent": 0.07948140919790889
+      }
+    }
+  },
+  "arrival_shape": {
+    "rfa_shape_corr": -0.6192,
+    "rfa_rel_mean_abs_diff": 0.4492,
+    "note": "OTC/Alpha arrival shape: reported in experiments/holdout.json and robustness.json (macro trajectory IAE 16.3, sixfold decline missed); both fail like RfA"
+  },
+  "wall_seconds": 78.5
+}
