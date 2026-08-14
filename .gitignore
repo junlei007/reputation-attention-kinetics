@@ -26,6 +26,7 @@ paper/appendix/*.out
 paper/appendix/*.fls
 paper/appendix/*.fdb_latexmk
 paper/appendix/*.pdf
+paper/submission/
 
 # large public datasets (download from SNAP; see README)
 # data READMEs are committed, raw data files are not
