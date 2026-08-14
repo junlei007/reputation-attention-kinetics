@@ -4,6 +4,7 @@ title: "Reputation–Attention Kinetics"
 type: software
 version: 0.1.0
 date-released: 2026-08-14
+doi: 10.5281/zenodo.21927468
 license: MIT
 repository-code: "https://github.com/junlei007/reputation-attention-kinetics"
 authors:

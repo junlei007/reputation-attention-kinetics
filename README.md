@@ -1,5 +1,7 @@
 # Reputation–Attention Kinetics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21927468.svg)](https://doi.org/10.5281/zenodo.21927468)
+
 **Microscopic—macroscopic theory of reputation capital and attention memory
 in directed trust networks** — the two-dimensional `(C, H)` state
 augmentation (reputation capital + exponentially-decayed attention memory),
@@ -81,8 +83,15 @@ data/                public SNAP datasets (gitignored)
 
 ## Citation
 
-Please cite the archived release described in `CITATION.cff`. A versioned DOI
-will be added after the first GitHub release is deposited with Zenodo.
+Please cite the archived software release:
+
+> Du, J., & Li, S. (2026). *Reputation–Attention Kinetics* (Version v0.1.0)
+> [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21927468
+
+The version DOI above identifies the code used for the manuscript. The Zenodo
+concept DOI for all software versions is
+https://doi.org/10.5281/zenodo.21927467. Machine-readable metadata are in
+`CITATION.cff`.
 
 ## License
 
