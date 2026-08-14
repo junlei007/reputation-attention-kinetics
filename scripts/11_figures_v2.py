@@ -58,6 +58,11 @@ DATASETS = ["OTC", "Alpha", "RfA"]
 DCOLORS = {"OTC": plotstyle.C1, "Alpha": plotstyle.C2, "RfA": plotstyle.C3}
 DMARKERS = {"OTC": "o", "Alpha": "s", "RfA": "^"}
 
+# Figure 1 uses a lighter, journal-style sans face and a compatible maths
+# face.  Keep this local to the schematic so Figure 2's calibrated layout is
+# unaffected.
+F1_TEXT = {"fontfamily": "Helvetica Neue", "math_fontfamily": "stixsans"}
+
 
 def _rfa_module():
     """Load the RfA pipeline only when Figure 2 needs its strata."""
@@ -112,12 +117,12 @@ def _box(ax, x, y, w, h, title, eq, keyword, title_size=7.9,
                                 fc=plotstyle.SURFACE, ec=plotstyle.INK,
                                 lw=1.0))
     ax.text(x + w / 2, y + h - 0.060, title, ha="center", va="top",
-            fontsize=title_size, fontweight="bold")
-    ax.text(x + w / 2, y + 0.235, eq, ha="center", va="center",
-            fontsize=eq_size)
+            fontsize=title_size, fontweight="medium", **F1_TEXT)
+    ax.text(x + w / 2, y + 0.215, eq, ha="center", va="center",
+            fontsize=eq_size, **F1_TEXT)
     ax.text(x + w / 2, y + 0.060, keyword, ha="center", va="center",
             fontsize=kw_size, style="italic",
-            color=plotstyle.INK_SECONDARY, linespacing=1.15)
+            color=plotstyle.INK_SECONDARY, linespacing=1.15, **F1_TEXT)
 
 
 def fig_theory_error(out: Path) -> None:
@@ -154,7 +159,7 @@ def fig_theory_error(out: Path) -> None:
         # short distance and cannot intrude into either rounded border.
         ax.text((left_box_right + next_box_left) / 2, y0 + bh / 2,
                 r"$\rightarrow$", ha="center", va="center",
-                fontsize=8.3, color=plotstyle.INK)
+                fontsize=8.3, color=plotstyle.INK, **F1_TEXT)
 
     # ---- full-width error panel (v0.11: joint law carries log(1+N)/sqrt N,
     #      exclusion constant (eta + omega) Lambda^2) ----
@@ -165,13 +170,13 @@ def fig_theory_error(out: Path) -> None:
     tx = px + 0.020
     ax.text(tx, py + ph - 0.052,
             r"Finite-time error ($B_i\equiv 1$: no entry/exit)",
-            fontsize=8.2, fontweight="bold", va="top")
+            fontsize=8.2, fontweight="medium", va="top", **F1_TEXT)
     # joint empirical measure: the critical-dimension rate of Theorem 3
     ax.text(tx, py + 0.320,
             r"$\sup_{0\leq t\leq T}\mathbb{E}\,W_1(\mu_t^N,f_t)\;\leq\;C_T\left\{"
             r"\frac{\log(1+N)}{\sqrt{N}}\;+\;\|W_N-W\|_\infty"
             r"\;\;+\;\;\varepsilon_{\mathrm{history}}\right\}$",
-            fontsize=7.5, va="center")
+            fontsize=7.5, va="center", **F1_TEXT)
     # Three columns make the decomposition legible at the final 5-inch width.
     cols = [
         (tx, r"$N^{-1/2}$", "particle coupling\n(Theorem 2)"),
@@ -179,15 +184,16 @@ def fig_theory_error(out: Path) -> None:
         (0.690, r"$\varepsilon_{\mathrm{history}}$", "pair-history exclusion"),
     ]
     for xx, symbol, label in cols:
-        ax.text(xx, py + 0.205, symbol, fontsize=7.5, fontweight="bold",
-                va="center")
+        ax.text(xx, py + 0.205, symbol, fontsize=7.5, fontweight="medium",
+                va="center", **F1_TEXT)
         ax.text(xx, py + 0.137, label, fontsize=7.0, va="center",
-                color=plotstyle.INK_SECONDARY)
+                color=plotstyle.INK_SECONDARY, **F1_TEXT)
     ax.text(tx, py + 0.048,
             r"$\varepsilon_{\mathrm{history}}(N,T)\;\leq\;"
             r"(\eta+\omega)\,\Lambda^2T^2e^{L_XT}/(2N)=O(N^{-1})$"
             r"  ($\Lambda=AP_1\max\{1,P_T\}$; $T^2$: accumulated history)",
-            fontsize=5.9, va="center", color=plotstyle.INK_SECONDARY)
+            fontsize=5.9, va="center", color=plotstyle.INK_SECONDARY,
+            **F1_TEXT)
     plotstyle.save(fig, str(out / "fig_theory_error.pdf"))
     plotstyle.save(fig, str(out / "fig_theory_error.png"))
 
