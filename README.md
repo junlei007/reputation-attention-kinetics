@@ -8,8 +8,10 @@ augmentation (reputation capital + exponentially-decayed attention memory),
 with a quantitative finite-time propagation-of-chaos result and
 cross-platform stress tests on Bitcoin OTC/Alpha and Wikipedia RfA.
 
-This repository contains the manuscript sources, simulation and estimation
-code, numerical outputs, and tests needed to reproduce the paper's results.
+This repository contains the simulation and estimation code, numerical
+outputs, and tests needed to reproduce the study's results. Manuscript and
+submission files are maintained separately and are not included in this
+public software repository.
 
 ## Setup
 
@@ -63,8 +65,6 @@ experiments/         all result JSONs
 figures/             paper figures
 notes/               technical notes: model freeze, kinetic derivation,
                      proof sketch, gate log, estimation design
-paper/               LaTeX: main draft (v0.6), supplement (v0.5),
-                     appendix proofs (v0.11, frozen)
 tests/               unit tests (kinetic 2D solver)
 data/                public SNAP datasets (gitignored)
 ```

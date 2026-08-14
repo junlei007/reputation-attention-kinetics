@@ -36,6 +36,7 @@ data/**/*.gz
 data/**/*.zip
 
 # internal review and submission-working files (kept locally)
+paper/
 notes/JCN_simulated_review_*.md
 notes/WP6_paper_and_routing.md
 paper/revision_snapshots/
