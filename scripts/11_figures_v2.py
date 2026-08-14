@@ -124,7 +124,11 @@ def fig_theory_error(out: Path) -> None:
     # A little more height and an explicit horizontal safe area keep the
     # rounded borders visible after tight-bbox export and improve leading in
     # the error panel at the final 5-inch print width.
-    W, H = 5.0, 2.40
+    # Give the long exclusion-bound annotation a little more horizontal and
+    # vertical breathing room.  The manuscript still scales the figure to
+    # the same text width, so this also reduces the effective type size
+    # slightly without changing any mathematical content.
+    W, H = 5.20, 2.52
     fig, ax = plt.subplots(figsize=(W, H))
     ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
     ax.grid(False)
@@ -154,11 +158,11 @@ def fig_theory_error(out: Path) -> None:
 
     # ---- full-width error panel (v0.11: joint law carries log(1+N)/sqrt N,
     #      exclusion constant (eta + omega) Lambda^2) ----
-    py, ph = 0.028, 0.495
-    ax.add_patch(FancyBboxPatch((x0, py), 1 - 2 * x0, ph,
+    py, ph, px = 0.018, 0.510, 0.018
+    ax.add_patch(FancyBboxPatch((px, py), 1 - 2 * px, ph,
                                 boxstyle="round,pad=0.008",
                                 fc="#f6f5f0", ec=plotstyle.AXIS, lw=0.9))
-    tx = x0 + 0.020
+    tx = px + 0.020
     ax.text(tx, py + ph - 0.052,
             r"Finite-time error ($B_i\equiv 1$: no entry/exit)",
             fontsize=8.2, fontweight="bold", va="top")
@@ -183,7 +187,7 @@ def fig_theory_error(out: Path) -> None:
             r"$\varepsilon_{\mathrm{history}}(N,T)\;\leq\;"
             r"(\eta+\omega)\,\Lambda^2T^2e^{L_XT}/(2N)=O(N^{-1})$"
             r"  ($\Lambda=AP_1\max\{1,P_T\}$; $T^2$: accumulated history)",
-            fontsize=7.0, va="center", color=plotstyle.INK_SECONDARY)
+            fontsize=5.9, va="center", color=plotstyle.INK_SECONDARY)
     plotstyle.save(fig, str(out / "fig_theory_error.pdf"))
     plotstyle.save(fig, str(out / "fig_theory_error.png"))
 
